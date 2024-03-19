@@ -21,18 +21,18 @@ sources:
         - simplified-water-polygons-split-3857/simplified_water_polygons.prj
         - simplified-water-polygons-split-3857/simplified_water_polygons.shp
         - simplified-water-polygons-split-3857/simplified_water_polygons.shx
-  water_polygons:
-    type: shp
-    url: https://osmdata.openstreetmap.de/download/water-polygons-split-3857.zip
-    file: water-polygons-split-3857/water_polygons.shp
-    archive:
-      format: zip
-      files:
-        - water-polygons-split-3857/water_polygons.cpg
-        - water-polygons-split-3857/water_polygons.dbf
-        - water-polygons-split-3857/water_polygons.prj
-        - water-polygons-split-3857/water_polygons.shp
-        - water-polygons-split-3857/water_polygons.shx
+  # water_polygons:
+  #   type: shp
+  #   url: https://osmdata.openstreetmap.de/download/water-polygons-split-3857.zip
+  #   file: water-polygons-split-3857/water_polygons.shp
+  #   archive:
+  #     format: zip
+  #     files:
+  #       - water-polygons-split-3857/water_polygons.cpg
+  #       - water-polygons-split-3857/water_polygons.dbf
+  #       - water-polygons-split-3857/water_polygons.prj
+  #       - water-polygons-split-3857/water_polygons.shp
+  #       - water-polygons-split-3857/water_polygons.shx
   icesheet_polygons:
     type: shp
     url: https://osmdata.openstreetmap.de/download/antarctica-icesheet-polygons-3857.zip
@@ -70,8 +70,8 @@ sources:
       - "WINDOWS-1252"
       - "-explodecollections"
       # needs reprojecting
-      - '-t_srs'
-      - 'EPSG:3857'
+      - "-t_srs"
+      - "EPSG:3857"
     archive:
       format: zip
       files:
